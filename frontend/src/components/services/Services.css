@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.title1 {
+    padding: 3rem;
+}
+
+.pa {
+    padding-left: 3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.image{
+    height: 5cm;
+    width: auto;
+    padding-left: 3rem;
+}
+
+.pe {
+    text-align: center;
+    padding-left: 3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.image1{
+    height: 5cm;
+    width: auto;
+    padding-left: 8rem;
+    align-items: center;
+}
+
+.pi {
+    text-align: right;
+    padding-right: 3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.image2{
+    height: 5cm;
+    width: auto;
+    padding-left: 8rem;
+    align-items: right;
+}
+
+.po {
+    padding-top: 2rem;
+    text-align: center;
+    padding-left: 3rem;
+    font-family: 'Anton', sans-serif;
+}
+
+.image3{
+    height: 8cm;
+    width: auto;
+    padding-left: 27rem;
+    padding-top: 1rem;
+}

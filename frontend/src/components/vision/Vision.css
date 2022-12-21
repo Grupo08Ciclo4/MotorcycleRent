@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.title3{
+    padding: 3rem;
+    padding-left: 10rem;
+}
+
+.parVision {
+    font-family: 'Crimson Text', serif;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.image5{
+    height: 10cm;
+    width: auto;
+    padding-left: 6rem;
+    opacity: 0.8;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.title {
+    padding: 1rem;
+}
+.paragraph {
+    padding: 3rem;
+}
+
+.p1 {
+    padding-bottom: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+.p2 {
+    padding-bottom: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+.p3 {
+    padding-bottom: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+.p4 *{
+    padding-top: 2rem;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
