@@ -30,7 +30,7 @@ mongoose.connect("mongodb+srv://motorcycleapp:motorcycleapp@clustermotorcycle.5u
 //Middlware
 
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: "http://127.0.0.1:5173"
 }))
 app.use(express.json())
 app.use("/user",userRouter)
