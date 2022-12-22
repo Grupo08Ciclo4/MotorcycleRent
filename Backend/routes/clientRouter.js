@@ -1,5 +1,5 @@
 import express from "express";
-import { createClient, deleteClient, readClient, updateClient } from "../controllers/clientController.js";
+import { createClient, deleteClient, readClient, readTClient, updateClient } from "../controllers/clientController.js";
 
 const clientRouter = express.Router()
 
@@ -14,6 +14,14 @@ clientRouter.post("/",(req,res) =>{
 clientRouter.get("/:idCliente",(req,res) =>{
     readClient(req, res)    
 });
+
+clientRouter.get("/",(req,res) =>{
+    readTClient(req, res)        
+});
+
+/*motoRouter.get("/",(req, res) =>{
+    readTClient(req, res)    
+});*/
 
 // PATCH
 

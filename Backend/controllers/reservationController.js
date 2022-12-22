@@ -41,6 +41,22 @@ export async function readReservation(req, res){
     res.status(200).json(reservacionDoc)
 }
 
+export async function readTReservation(req, res){
+    
+   
+    let reservacionDoc
+
+    try {
+        reservacionDoc = await reservationModel.find()
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+        
+    }
+
+    res.status(200).json(reservacionDoc)
+}
+
 // patch
 export async function updateReservation(req, res){
     

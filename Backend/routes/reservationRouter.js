@@ -1,5 +1,5 @@
 import express from "express";
-import { createReservation, deleteReservation, readReservation, updateReservation } from "../controllers/ReservationController.js";
+import { createReservation, deleteReservation, readReservation, readTReservation, updateReservation } from "../controllers/ReservationController.js";
 
 const reservationRouter = express.Router()
 
@@ -13,6 +13,10 @@ reservationRouter.post("/",(req,res) =>{
 
 reservationRouter.get("/:idReservacion",(req,res) =>{
     readReservation(req, res)    
+});
+
+reservationRouter.get("/",(req,res) =>{
+    readTReservation(req, res)    
 });
 
 // PATCH

@@ -1,5 +1,5 @@
 import express from "express";
-import { createMessage, deleteMessage, readMessage, updateMessage } from "../controllers/MessageController.js";
+import { createMessage, deleteMessage, readMessage, readTMessage, updateMessage } from "../controllers/MessageController.js";
 
 const messageRouter = express.Router()
 
@@ -15,6 +15,9 @@ messageRouter.get("/:idMensaje",(req,res) =>{
     readMessage(req, res)    
 });
 
+messageRouter.get("/",(req,res) =>{
+    readTMessage(req, res)    
+});
 // PATCH
 
 messageRouter.patch("/:idMensaje",(req,res) =>{

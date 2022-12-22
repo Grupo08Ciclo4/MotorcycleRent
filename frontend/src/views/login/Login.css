@@ -1,32 +1,31 @@
 .login {
-    text-align: center;
+  text-align: center;
 }
 
 .login .logo {
-    justify-content: center;
-    margin: 1rem auto;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
 .login .title {
-    text-align: center;
-    font-weight: 300;
+  text-align: center;
+  font-weight: 300;
 }
 
 .login .form {
-    max-width: 25rem;
-    margin: 1rem auto;
-    flex-direction: column;
-    gap: 2rem;
-    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+  max-width: 25rem;
+  margin: 1rem auto;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
 }
 
 .login .register {
-    max-width: 25rem;
-    margin: 0 auto;
-    justify-content: center;
+  max-width: 25rem;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .login .fill-button {
-    width: 100%;
+  width: 100%;
 }
-

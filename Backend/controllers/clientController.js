@@ -40,6 +40,22 @@ export async function readClient(req, res){
    res.status(200).json(clienteDoc)
 }
 
+export async function readTClient(req, res){
+    
+        
+    let clienteDoc
+
+    try {
+        clienteDoc = await clientModel.find()
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+        
+    }
+    
+   res.status(200).json(clienteDoc)
+}
+
 // patch
 export async function updateClient(req, res){
 

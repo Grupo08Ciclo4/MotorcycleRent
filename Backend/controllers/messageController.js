@@ -42,6 +42,21 @@ export async function readMessage(req, res){
     res.status(200).json(mensajeDoc)  
 }
 
+export async function readTMessage(req, res){
+    
+    let mensajeDoc
+
+    try {
+        mensajeDoc = await messageModel.find()
+    } catch (error) {
+        res.status(400).json(error.message)
+        return
+        
+    }
+
+    res.status(200).json(mensajeDoc)  
+}
+
 // patch
 export async function updateMessage(req, res){
 
