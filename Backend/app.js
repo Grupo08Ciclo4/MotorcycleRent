@@ -7,7 +7,7 @@ import messageRouter from "./routes/messageRouter.js";
 import motoRouter from "./routes/motoRouter.js";
 import reservationRouter from "./routes/reservationRouter.js";
 import userRouter from "./routes/userRouter.js";
-import { API_URL } from "./api.js";
+import { API_URL } from "./apiBacken.js";
 mongoose.set('strictQuery', false);
 
 //const cors = require('cors');
