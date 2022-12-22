@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DatosCategory from './DatosCategory';
+import { API_URL } from '../rutaApi/api';
 
 import "./CategoryPanel.css"
 
@@ -10,7 +11,7 @@ function CategoryPanel() {
     async function fetchDatosCategory() {
 
         //const res = await fetch("http://jsonplaceholder.typicode.com/todos")
-        const res = await fetch("http://localhost:8080/category/") 
+        const res = await fetch(API_URL + "/category/") 
         const documents = await res.json()
         setDocuments(documents)
     }

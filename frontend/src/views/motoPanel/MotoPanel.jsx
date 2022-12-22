@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import DatosMoto from './DatosMotos';
+import { API_URL } from '../rutaApi/api';
 
 import "./MotoPanel.css"
 
@@ -10,7 +11,7 @@ function MotoPanel() {
     async function fetchDatosMotos() {
 
         //const res = await fetch("http://jsonplaceholder.typicode.com/todos")
-        const res = await fetch("http://localhost:8080/moto/") 
+        const res = await fetch(API_URL + "/moto/") 
         const documents = await res.json()
         setDocuments(documents)
     }
