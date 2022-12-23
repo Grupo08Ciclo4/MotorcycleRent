@@ -1,5 +1,5 @@
 import express from "express";
-import { createMoto, deleteMoto, readMoto,readTMoto, updateMoto } from "../controllers/MotoController.js";
+import { createMoto, deleteMoto, readMoto,readTMoto, updateMoto } from "../controllers/motoController.js";
 
 const motoRouter = express.Router()
 
