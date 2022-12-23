@@ -7,7 +7,6 @@ import messageRouter from "./routes/messageRouter.js";
 import motoRouter from "./routes/motoRouter.js";
 import reservationRouter from "./routes/reservationRouter.js";
 import userRouter from "./routes/userRouter.js";
-
 mongoose.set('strictQuery', false);
 
 //const cors = require('cors');
@@ -31,7 +30,7 @@ mongoose.connect("mongodb+srv://motorcycleapp:motorcycleapp@clustermotorcycle.5u
 //Middlware
 
 app.use(cors({
-    origin: process.env.APP_URL
+    origin: process.env.APP_URL,
 }))
 app.use(express.json())
 app.use("/user",userRouter)
